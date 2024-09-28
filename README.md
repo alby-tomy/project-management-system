@@ -42,7 +42,7 @@ cd frontend
 npm install
 ```
 
-#### 3. Create a .env file in the frontend directory and add your GitHub token :
+#### 3. Create a `.env` file in the frontend directory and add your GitHub token :
 ```plaintext
 REACT_APP_GITHUB_TOKEN='<your_github_token>'
 ```

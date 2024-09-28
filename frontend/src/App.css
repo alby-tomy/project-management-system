@@ -1,0 +1,268 @@
+.heading {
+  max-width: 400px;
+  margin: 100px auto;
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 60px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.form-container h2{
+  margin: 0px auto;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+}
+
+
+
+/* project session */
+.project-list-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.project-box {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.project-box:hover {
+  background-color: #f1f1f1;
+  transition: 0.3s ease;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.project-link h3 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.edit-button {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #555;
+}
+
+.edit-button:hover {
+  color: #000;
+}
+
+.edit-project-title input {
+  width: 80%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.edit-project-title button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-project-title button:hover {
+  background-color: #0056b3;
+}
+
+
+.project-link:hover .project-box {
+  transform: translateY(-8px); /* Slightly larger hover effect */
+}
+
+
+
+
+
+/* todo list */
+.todo-list-container {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* Pushes the button to the right */
+  align-items: center; /* Vertically centers the items */
+}
+
+.add-button {
+  margin-left: 10px; /* Space between the title and button */
+  padding: 5px 10px; /* Padding for button */
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor pointer on hover */
+}
+
+.add-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.todo-section {
+  margin-top: 20px; /* Space between sections */
+}
+
+.todo-box {
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+  border: 1px solid #ccc; /* Border for todo box */
+  padding: 10px; /* Padding inside the box */
+  margin-bottom: 10px; /* Space between todo boxes */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.add-todo {
+  margin-top: 20px; /* Space above the input field */
+  display: flex; /* Flexbox for alignment */
+  align-items: center; /* Center items vertically */
+}
+
+.add-todo input {
+  flex: 1; /* Take up remaining space */
+  padding: 5px; /* Padding for input */
+  margin-right: 10px; /* Space between input and button */
+}
+
+
+/* Navbar */
+/* src/styles/Navbar.css */
+.navbar {
+  background-color: #644f4f;
+  padding: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between; /* Space between elements (left & right alignment) */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.navbar ul li.left {
+  justify-self: flex-start;
+  font-size: 20px; /* Align "Home" to the left */  
+}
+
+.navbar ul li.right {
+  justify-self: flex-end; /* Align "Logout" to the right */
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.navbar ul li button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.navbar ul li button:hover,
+.navbar ul li a:hover {
+  background-color: #555;
+}
+
+
+/* loader container */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}

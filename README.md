@@ -32,7 +32,7 @@ git clone https://github.com/<your-username>/project-management-app.git
 cd project-management-app
 ```
 ### Frontend Setup
-#### 1. Navigate to the frontend directory:
+#### 1. Navigate to the `frontend` directory:
 ```bash
 cd frontend
 ```
@@ -42,7 +42,7 @@ cd frontend
 npm install
 ```
 
-#### 3. Create a `.env` file in the frontend directory and add your GitHub token :
+#### 3. Create a `.env` file in the `frontend` directory and add your GitHub token :
 ```plaintext
 REACT_APP_GITHUB_TOKEN='<your_github_token>'
 ```
@@ -53,7 +53,7 @@ npm start
 ```
 
 ### Backend Setup
-#### 1. Navigate to the backend directory:
+#### 1. Navigate to the `backend` directory:
 ```bash
 cd backend
 ```

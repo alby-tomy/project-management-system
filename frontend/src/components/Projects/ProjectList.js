@@ -132,7 +132,7 @@ const ProjectList = () => {
                                                 className="delete-button"
                                                 onClick={() => handleDeleteProject(project.id)}
                                             >
-                                                🗑
+                                                🗑 Delete
                                             </button>
                                         </>
                                     )}

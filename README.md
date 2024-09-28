@@ -75,9 +75,9 @@ python app.py
 2. Use the application to manage your projects and tasks.
 
 ## Acknowledgements
-- [Flask](https://flask.palletsprojects.com/) - for building the backend API.
-- [Basic Authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication) - The application uses Basic Authentication for securing API endpoints.
-- [Flask-SQLALchemy](https://flask-sqlalchemy.readthedocs.io/en/3.1.x/api/#module-flask_sqlalchemy) - Used for managing the database and providing Object-Relational Mapping (ORM) for database models.
-- [React](https://reactjs.org/) - for providing a great frontend framework.
-- [Axios](https://axios-http.com/docs/api_intro) - Used for handling HTTP requests in the project.
-- [GitHub Gists](https://gist.github.com/) - for allowing easy export of project summaries.
+- <a href="https://flask.palletsprojects.com/" target="_blank">Flask</a> - for building the backend API.
+- <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication" target="_blank">Basic Authentication</a> - The application uses Basic Authentication for securing API endpoints.
+- <a href="https://flask-sqlalchemy.readthedocs.io/en/3.1.x/api/#module-flask_sqlalchemy" target="_blank">Flask-SQLALchemy</a> - Used for managing the database and providing Object-Relational Mapping (ORM) for database models.
+- <a href="https://reactjs.org/" target="_blank">React</a> - for providing a great frontend framework.
+- <a href="https://axios-http.com/docs/api_intro" target="_blank">Axios</a> - Used for handling HTTP requests in the project.
+- <a href="https://gist.github.com/" target="_blank">GitHub Gists</a> - for allowing easy export of project summaries.

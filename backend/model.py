@@ -21,13 +21,13 @@ class User(db.Model):
 
 class Project(db.Model):
     """Project model for storing project information."""
-    id = db.Column(db.Integer, primary_key=True)  # Unique ID
-    title = db.Column(db.String(100), nullable=False)  # Project Title
-    created_date = db.Column(db.DateTime, default=datetime.utcnow)  # Created Date
-    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)  # Associated User ID
+    id = db.Column(db.Integer, primary_key=True) 
+    title = db.Column(db.String(100), nullable=False) 
+    created_date = db.Column(db.DateTime, default=datetime.utcnow) 
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False) 
 
     # Relationships
-    user = db.relationship('User', backref='projects')  # Backref for accessing projects from user
+    user = db.relationship('User', backref='projects')  
     todos = db.relationship('Todo', backref='project', lazy=True)  # Relationship with Todo
 
 
@@ -36,11 +36,11 @@ class Project(db.Model):
 
 class Todo(db.Model):
     """Todo model for storing task information associated with a project."""
-    id = db.Column(db.Integer, primary_key=True)  # Unique ID
-    description = db.Column(db.String(500), nullable=False)  # Todo Description
+    id = db.Column(db.Integer, primary_key=True)  #
+    description = db.Column(db.String(500), nullable=False)
     status = db.Column(db.Boolean, default=False)  # Status (Completed/Not Completed)
-    created_date = db.Column(db.DateTime, default=datetime.utcnow)  # Created Date
-    updated_date = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)  # Updated Date
+    created_date = db.Column(db.DateTime, default=datetime.utcnow) 
+    updated_date = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow) 
     project_id = db.Column(db.Integer, db.ForeignKey('project.id'), nullable=False)  # Associated Project ID
 
     def __repr__(self):
